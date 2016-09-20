@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="javascripts/highlight/styles/default.css" media="screen">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Htmlcss by alekskorovin</title>
+</head>
+
+<body>
+<header>
+    <div class="inner">
+        <h1>Структура проекта. Валидность и стиль кода. Блочная модель и "вес селекторов".</h1>
+        <a href="https://github.com/alekskorovin/box-model-selectors-weight/" class="button">
+            <small>открыть на</small>
+            GitHub</a>
+    </div>
+</header>
+
+<div id="content-wrapper">
+    <div class="inner clearfix">
+        <section id="main-content">
+            <h2>
+                <a id="stricture" class="anchor" href="#stricture" aria-hidden="true"><span aria-hidden="true"
+                                                                                  class="octicon octicon-link"></span>Структура проекта</a>
+            </h2>
+            <h3>
+                Файловая структура проекта
+            </h3>
+            <p>Для лучшей поддержки кода проекта необходима понятная и очевидная файловая структура, необходимо логически разделять файлы которые используются в веб-странице:</p>
+            <h4>Лучшие практики формирования файловой структуре проекта:</h4>
+            <ul>
+                <li>Все файлы посвященные проекту должны размещаться в папке с названием проекта.</li>
+                <li>Общее правило &mdash; по возможности все файлы одного типа размещать в отдельной папке.</li>
+                <li>Все <b>CSS-файлы</b> со стилями рекомендуется размещать в папке <b>css</b>.</li>
+                <li><b>HTML-файлы</b> &mdash; размещаются <b>в корне папки</b>, если их количество больше 10-ти, их следует размещать в подпапках называнных как секции (разделы) сайта.</li>
+                <li><b>JS-файлы</b> &mdash; в папке <b>js</b>.</li>
+                <li><b>Изображения</b> &mdash; в папке <b>img</b> или <b>images</b>, где можно создать подпапку <b>svg</b> для векторных изображений.</li>
+                <li><b>Шрифты</b> &mdash; в папке <b>fonts</b>.</li>
+                <li><b>Сторонние библиотеки</b> в папке <b>vendors</b></li>
+            </ul>
+            <p>Если рассмотреть структуру самой популярной заготовки для верстки <a href="https://html5boilerplate.com/">HTML5Boilerplate</a>:</p>
+
+            <h3>
+                Структура стилей в CSS-файле
+            </h3>
+
+            <h2>
+                <a id="validation" class="anchor" href="#validation" aria-hidden="true"><span aria-hidden="true"
+                                                                                  class="octicon octicon-link"></span>Валидность кода</a>
+            </h2>
+            <h2>
+                <a id="box-model" class="anchor" href="box-model" aria-hidden="true"><span aria-hidden="true"
+                                                                                  class="octicon octicon-link"></span>Блочная модель</a>
+            </h2>
+            <h2>
+                <a id="html-code-style" class="anchor" href="html-code-style" aria-hidden="true"><span aria-hidden="true"
+                                                                                  class="octicon octicon-link"></span>Стиль кода HTML</a>
+            </h2>
+            <h2>
+                <a id="css-code-style" class="anchor" href="css-code-style" aria-hidden="true"><span aria-hidden="true"
+                                                                                  class="octicon octicon-link"></span>Стиль кода CSS</a>
+            </h2>
+            <h2>
+                <a id="selectors-weight" class="anchor" href="selectors-weight" aria-hidden="true"><span aria-hidden="true"
+                                                                                  class="octicon octicon-link"></span>“Вес селекторов”</a>
+            </h2>
+
+        </section>
+
+        <aside id="sidebar">
+            <a href="https://github.com/alekskorovin/box-model-selectors-weight//archive/gh-pages.zip" class="button">
+                <small>Download</small>
+                .zip file
+            </a>
+
+        </aside>
+
+    </div>
+</div>
+
+<script src="javascripts/highlight/highlight.pack.js"></script>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
