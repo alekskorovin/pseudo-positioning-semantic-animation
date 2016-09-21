@@ -35,7 +35,29 @@
                 <a id="pseudoclasses" class="anchor" href="#pseudoclasses" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Псевдоклассы</a>
             </h2>
+            <p><b>Псевдоклассы</b> определяют состояние элемента выбранного селектором. Псевдокласс ставится после класса вместе с двоеточием.</p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                селектор<strong>:псевдо_класс</strong> { свойство: значение; }
+            </blockquote>
+            <h3>Ссылки</h3>
+            <p>Для ссылок существует несколько псевдоклассов:</p>
+            <ul>
+                <li><b>link</b> &mdash; определяет непосещённые ссылки</li>
+                <li><b>visited</b> &mdash; определяет уже посещённые ссылки</li>
+            </ul>
+            <p data-height="178" data-theme-id="0" data-slug-hash="JRbLWv" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/JRbLWv/">Links</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Динамические псевдоклассы</h3>
+            <p>Динамические псевдоклассы применяются когда с элементом происходит какое-то событие. Они так же используются для ссылок, но применимы к другим элементам и более часто необходимы для элементов форм.</p>
+            <ul>
+                <li><b>active</b> &mdash; когда пользователь нажимает на элемент (например нажимает на ссылку).</li>
+                <li><b>hover</b> &mdash; когда курсор наводится на элемент (например пользователь наводит мышь на ссылку).</li>
+                <li><b>focus</b> &mdash; когда элемент находится в фокусе, он выбран либо готов к вводу в него данных (в случае текстовых полей). Можно менять активный элемент на странице используя клавишу <b>Tab</b>. Если это элемент формы или ссылка можно поставить на этот элемент фокус просто кликнув на него.</li>
+            </ul>
+            <h3>Дочерние элементы</h3>
+            <p>Существую псевдоклассы позволяющие выбрать дочерние элементы: например первый, последний, второй, третий, чётный/нечётный элемент и другие (CSS3 псевдоклассы).</p>
 
+            <p data-height="400" data-theme-id="0" data-slug-hash="bwBvaE" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/bwBvaE/">Dynamic pseudo classes</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
             <h2>
                 <a id="pseudoelements" class="anchor" href="#pseudoelements" aria-hidden="true"><span aria-hidden="true"
