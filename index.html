@@ -40,7 +40,7 @@
                 <b>Синтаксис:</b>
                 селектор<strong>:псевдо_класс</strong> { свойство: значение; }
             </blockquote>
-            <p>Более новый синтаксис не всегда поддерживается браузерами (два двоеточия):</p>
+            <p>Более новый синтаксис CSS3, не всегда поддерживается браузерами (два двоеточия).</p>
             <blockquote>
                 <b>Синтаксис:</b>
                 селектор<strong>::псевдо_класс</strong> { свойство: значение; }
@@ -80,7 +80,7 @@
                 <b>Синтаксис:</b>
                 селектор<strong>:псевдо_элемент</strong> { свойство: значение; }
             </blockquote>
-            <p>Более новый синтаксис не всегда поддерживается браузерами (два двоеточия):</p>
+            <p>Более новый синтаксис CSS3, не всегда поддерживается браузерами (два двоеточия):</p>
             <blockquote>
                 <b>Синтаксис:</b>
                 селектор<strong>::псевдо_элемент</strong> { свойство: значение; }
@@ -89,29 +89,79 @@
             <p>
                 <b>first-letter</b> &mdash; псевдо-элемент из CSS1 для выбора первой буквы элемента.
             </p>
-            <p data-height="430" data-theme-id="0" data-slug-hash="BLpzPy" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/BLpzPy/">First letter pseudo classes</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p data-height="430" data-theme-id="0" data-slug-hash="BLpzPy" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/BLpzPy/">First letter pseudo classes</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h3>Псевдоэлемент для выбора первой строки</h3>
             <p>
                 <b>first-line</b> &mdash; псевдо-элемент из CSS1 для выбора первой строки элемента.
             </p>
-            <p data-height="452" data-theme-id="0" data-slug-hash="LRxkXX" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/LRxkXX/">First line pseudo element</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p data-height="452" data-theme-id="0" data-slug-hash="LRxkXX" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/LRxkXX/">First line pseudo element</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
             <h3>Псевдоэлементы before и after</h3>
+
             <p>
                 Псевдоэлементы, которые используется для добавления контента до (<b>before</b>) и после (<b>after</b>) содержимого элемента, к которому он добавляется.
             </p>
             <p>Эти псевдоэлементы и их контент используются для декоративных целей, например можно выводить все ссылки в явном виде при печати страницы.</p>
-            <p>Псевдоэлементы <b>before</b> и <b>after</b> это очень мощный инструмент для добавления декоративных CSS-свойств.</p>
-            
-
-
+            <p>Псевдоэлементы <b>before</b> и <b>after</b> это очень мощный инструмент для добавления декоративных CSS-свойств. Кроме того можно делать всплывающие подсказки, размещая текст для подсказок в атрибутах элемента.</p>
+            <p>Псевдоэлементы <b>before</b> и <b>after</b> <b>испльзуются только вместе</b> со свйойством <b>content</b> в котором размещается дополнительный контент, выводимый из CSS в HTML либо использующий значения атрибутов элемента.</p>
+            <h4>Значения свойства content</h4>
+            <ul>
+                <li><b>'строка'</b> &mdash; возможно размещение любого текста в кавычках.</li>
+                <li><b>url(путь_к_изображению)</b> &mdash; возможно указывать URL (путь, адрес) к изображению в кавычках.</li>
+                <li><b>open-quote</b> &mdash; открывающая кавычка.</li>
+                <li><b>close-quote</b> &mdash; закрывающая кавычка.</li>
+                <li><b>attr(название_атрибута)</b> &mdash; выводит текст указанный как свойсто атрибута.</li>
+            </ul>
+            <h5>Вывод строки</h5>
+            <p data-height="290" data-theme-id="0" data-slug-hash="BLpRwP" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/BLpRwP/">Pseudo element before/after</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h5>Вывод изображения</h5>
+            <p>Используется редко, потому что сложно контролировать поведение выводимого изображения.</p>
+            <p data-height="338" data-theme-id="0" data-slug-hash="xEgdJR" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/xEgdJR/">Pseudo element before image</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h5>Открывающие и закрывающие кавычки</h5>
+            <p data-height="214" data-theme-id="0" data-slug-hash="ampWPB" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/ampWPB/">Pseudo element before/after - open/close quote</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h5>Значения атрибутов</h5>
+            <p>
+                Текст можно брать из атрибутов элемента:
+            </p>
+            <p data-height="179" data-theme-id="0" data-slug-hash="Kgaqgd" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/Kgaqgd/">Pseudo element before/after - attr</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Можно выводить URL для ссылки только при наведении на неё создавать tooltip (всыплывающую подсказку с декоративными стилями):
+            </p>
+            <p data-height="248" data-theme-id="0" data-slug-hash="dpNRvK" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/dpNRvK/">Pseudo element before/after - attr - tooltip</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Можно использовать собственные атрибуты для хранения текста для всплывающих подсказок:
+            </p>
+            <p data-height="215" data-theme-id="0" data-slug-hash="bwgRaN" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/bwgRaN/">Pseudo element before/after - attr - tooltip data attributes</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Можно использовать для декоративных целей:
+            </p>
+            <p data-height="480" data-theme-id="0" data-slug-hash="EgkXpQ" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/EgkXpQ/">Pseudo element before/after - decorative</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h3>Псевдоэлемент ::selection</h3>
+            <p>Псевдоэлемент <b>::selection</b> позволяет переопределить цвета по умолчанию области выделенного текста.</p>
+            <p data-height="282" data-theme-id="0" data-slug-hash="QKdrjv" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/QKdrjv/">Pseudo element selection</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h3>Псевдоэлемент ::placeholder</h3>
-            <p>Существуют другие псевдоэлементы которые используются с браузерными префиксами, и которые не входят в стандарты, но могут использоваться для задания специфичных для браузеров стилей.</p>
+            <p>Существуют другие псевдоэлементы которые используются с браузерными префиксами, и которые не входят в стандарты, но могут использоваться для задания специфичных для браузеров стилей, например <b>user-select</b> (запрещает выделять текст):</p>
+            <p data-height="258" data-theme-id="0" data-slug-hash="ZpLJzA" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/ZpLJzA/">Pseudo element user select none</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h2>
                 <a id="floats" class="anchor" href="#floats" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Флоаты</a>
             </h2>
+            <p>
+                Для того чтобы сделать блок "плавающим" (float - floating) для элемента необходимо применить свойство <b>float</b>, которое может принимать три значения:
+            </p>
+            <ul>
+                <li><b>left</b> &mdash; блок прибивается к <b>левому</b> краю доступной области и контент обтекает блок справа.</li>
+                <li><b>right</b> &mdash; блок прибивается к <b>правому</b> краю доступной области  и контент обтекает блок слева.</li>
+                <li><b>none</b> &mdash; отменяются свойства left/right.</li>
+            </ul>
+            <blockquote>
+                <strong>Особенность</strong>
+                <p>
+                    Когда элементу задано свойство float &mdash; left или right он автоматически становится блочным.
+                </p>
+            </blockquote>
+            
+
             <h2>
                 <a id="position" class="anchor" href="#position" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Позиционирование</a>
