@@ -40,6 +40,11 @@
                 <b>Синтаксис:</b>
                 селектор<strong>:псевдо_класс</strong> { свойство: значение; }
             </blockquote>
+            <p>Более новый синтаксис не всегда поддерживается браузерами (два двоеточия):</p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                селектор<strong>::псевдо_класс</strong> { свойство: значение; }
+            </blockquote>
             <h3>Ссылки</h3>
             <p>Для ссылок существует несколько псевдоклассов:</p>
             <ul>
@@ -54,15 +59,55 @@
                 <li><b>hover</b> &mdash; когда курсор наводится на элемент (например пользователь наводит мышь на ссылку).</li>
                 <li><b>focus</b> &mdash; когда элемент находится в фокусе, он выбран либо готов к вводу в него данных (в случае текстовых полей). Можно менять активный элемент на странице используя клавишу <b>Tab</b>. Если это элемент формы или ссылка можно поставить на этот элемент фокус просто кликнув на него.</li>
             </ul>
-            <h3>Дочерние элементы</h3>
-            <p>Существую псевдоклассы позволяющие выбрать дочерние элементы: например первый, последний, второй, третий, чётный/нечётный элемент и другие (CSS3 псевдоклассы).</p>
-
             <p data-height="400" data-theme-id="0" data-slug-hash="bwBvaE" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/bwBvaE/">Dynamic pseudo classes</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Псевдоклассы для выбора элемента</h3>
+            <p>Существую псевдоклассы позволяющие выбрать элементы по порядку либо порядковому номеру: например первый, последний, второй, третий, чётный/нечётный элемент и другие (CSS3 псевдоклассы).</p>
+            <ul>
+                <li><b>first-child</b> &mdash; выбирает первый элемент</li>
+                <li><b>last-child</b> &mdash; выбирает последний элемент</li>
+                <li><b>nth-child(2)</b> &mdash; выбирает второй элемент</li>
+                <li><b>nth-child(2n)</b> &mdash; выбирает каждый второй элемент</li>
+                <li><b>nth-child(even)</b> &mdash; выбирает чётный элемент</li>
+                <li><b>nth-child(odd)</b> &mdash; выбирает нечётный элемент</li>
+            </ul>
+            <p data-height="410" data-theme-id="0" data-slug-hash="LRxkQB" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/LRxkQB/">Child pseudo classes</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
             <h2>
                 <a id="pseudoelements" class="anchor" href="#pseudoelements" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Псевдоэлементы</a>
             </h2>
+            <blockquote>
+                <b>Синтаксис:</b>
+                селектор<strong>:псевдо_элемент</strong> { свойство: значение; }
+            </blockquote>
+            <p>Более новый синтаксис не всегда поддерживается браузерами (два двоеточия):</p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                селектор<strong>::псевдо_элемент</strong> { свойство: значение; }
+            </blockquote>
+            <h3>Псевдоэлемент для выбора первой буквы</h3>
+            <p>
+                <b>first-letter</b> &mdash; псевдо-элемент из CSS1 для выбора первой буквы элемента.
+            </p>
+            <p data-height="430" data-theme-id="0" data-slug-hash="BLpzPy" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/BLpzPy/">First letter pseudo classes</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Псевдоэлемент для выбора первой строки</h3>
+            <p>
+                <b>first-line</b> &mdash; псевдо-элемент из CSS1 для выбора первой строки элемента.
+            </p>
+            <p data-height="452" data-theme-id="0" data-slug-hash="LRxkXX" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/LRxkXX/">First line pseudo element</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+            <h3>Псевдоэлементы before и after</h3>
+            <p>
+                Псевдоэлементы, которые используется для добавления контента до (<b>before</b>) и после (<b>after</b>) содержимого элемента, к которому он добавляется.
+            </p>
+            <p>Эти псевдоэлементы и их контент используются для декоративных целей, например можно выводить все ссылки в явном виде при печати страницы.</p>
+            <p>Псевдоэлементы <b>before</b> и <b>after</b> это очень мощный инструмент для добавления декоративных CSS-свойств.</p>
+            
+
+
+            <h3>Псевдоэлемент ::selection</h3>
+            <h3>Псевдоэлемент ::placeholder</h3>
+            <p>Существуют другие псевдоэлементы которые используются с браузерными префиксами, и которые не входят в стандарты, но могут использоваться для задания специфичных для браузеров стилей.</p>
             <h2>
                 <a id="floats" class="anchor" href="#floats" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Флоаты</a>
