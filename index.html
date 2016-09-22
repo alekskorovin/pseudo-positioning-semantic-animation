@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
@@ -183,6 +182,66 @@
                 <a id="position" class="anchor" href="#position" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Позиционирование</a>
             </h2>
+            <p>Чтобы задать позиционирование элемента используется свойсво <b>position</b>. По умолчанию у элементов значение <b>position</b> это <b>static</b>.</p>
+            <p>Все значения свойства <b>position</b>:</p>
+            <ul>
+                <li><b>static</b> &mdash; нормальное позиционирование, элемент участвует в общем потоке элементов (элементы идут один под другим).</li>
+                <li><b>relative</b> &mdash; позиционирование похожее на <b>static</b>, но при этом свойстве элемент может быть вынесен на более высокий или более низкий слой с помощью свойства <b>z-index</b>, а так же элемент может быть смещён относительно своего нормального положения с помощью свойств:
+                    <ul>
+                        <li><b>top</b> &mdash; отступ сверху.</li>
+                        <li><b>left</b> &mdash; отступ слева.</li>
+                        <li><b>right</b> &mdash; отступ справа.</li>
+                        <li><b>bottom</b> &mdash; отступ снизу.</li>
+                    </ul>
+                    При <code class="css">position: relative</code> элементом резервируется то же место, что и до смещения элемента.<br />
+                    В этом случае свойства <b>top, left, right, bottom</b> работают так же как и внешний отступ (margin).
+                </li>
+                <li>
+                    <b>absolute</b> &mdash; при этом элемент вообще выпадает из потока других элементов, и его позиционирования можно менять отступами <b>margin</b> и свойствми <b>top</b>, <b>left</b>, <b>right</b>, <b>bottom</b>. Этот элемент перестает влиять на другие элементы и не подвержен влияию других элементов кроме родителя с <code class="css">position: relative;</code>
+                    При этом позиционировании свойства ведут себя так:
+                    <ul>
+                        <li>
+                            <p>
+                                Если элемент не находится внутри другого элемента с <code class="css">position: relative</code> и ни одно из свойств <b>top, left, right, bottom</b> не задано,
+                                то элемент повисает в "воздухе" над остальными элементами идущими в общем потоке.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Если элемент не внутри другого элемента с <code class="css">position: relative</code> и задано одно из свойств <b>top, left, right, bottom</b>, то эти свойства работают так:
+                            </p>
+                            <ul>
+                                <li><code class="css">top: 10px;</code> &mdash; элемент прилипает к верхней части экрана <b>body</b> и смещается вниз на 10px.</li>
+                                <li><code class="css">left: 1em;</code> &mdash; элемент прилипает к левой части экрана и смещается впрвао на 1em.</li>
+                                <li><code class="css">right: 0;</code> &mdash; элемент прилипает к правой части экрана.</li>
+                                <li><code class="css">bottom: 1rem;</code> &mdash; элемент прилипает к нижней части <b>видимой области</b> (НЕ ЭКРАНА) и смещается вверх на 1rem.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>
+                                Если элемент <b>внутри</b> другого элемента с <code class="css">position: relative</code> то "прилипание" происходит не к экрану, а к краям этого родительского элемента (смещается элемент так же).
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>fixed</b> &mdash; при таком позиционировании элемент ведёт себя почти так же как и при <b>absolute</b>, но "прилипает" к границам экрана вне зависимости от родителей с <code class="css">position: relative;</code>
+                </li>
+            </ul>
+            <h3>Свойства top, left, right, bottom</h3>
+            <p>
+                Значения свойств задаются в размерных CSS-единицах (px, em, rem, % ...), если задаётся значение в процентах, используются размеры родителя относительно которого эти проценты рассчитываются.
+            </p>
+            <p>Для сброса ранее заданных значений использвется свойство <b>auto</b>: чтобы перебить <code class="css">left: 50%;</code> надо задать <code class="css">left: auto;</code>.</p>
+            <h3>Свойство z-index</h3>
+            <p>
+                Свойство <b>z-index</b> задаёт порядок слоя в котором находится элемент при position <b>relative</b>, <b>absolute</b>, <b>fixed</b>. Значением может быть целое число либо значение по умолчанию <b>auto</b>.
+            </p>
+            <h3>Относительное позиционирование (position: relative).</h3>
+            <p data-height="321" data-theme-id="0" data-slug-hash="vXgppN" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/vXgppN/">positioning relative</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+            <p data-height="320" data-theme-id="0" data-slug-hash="gwgojL" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/gwgojL/">positioning relative z-index</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            
             <h2>
                 <a id="semantic" class="anchor" href="#semantic" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Обзор новых семантических тегов</a>
