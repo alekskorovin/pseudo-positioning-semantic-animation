@@ -374,7 +374,50 @@
                 <a id="gradients" class="anchor" href="#gradients" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Градиенты</a>
             </h2>
-            
+            <p data-height="163" data-theme-id="0" data-slug-hash="qaAOZr" data-default-tab="result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/qaAOZr/">Gradient</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>Градиент это изображение на котором цвета плавно переходят из одного в другой (градиенты называют цветовыми растяжками). Чтобы не использовать фоновое изображение для градиента, ведь для загрузки изображения требуется дополнительный запрос на сервер, в CSS добавили четыре функции, позволяющих нарисовать нужный градиент используя заданные параметры.</p>
+            <p>Чтобы отобразить градиент используются свойства <b>background</b> или <b>background-image</b>, и вместо изображения использовать одну из четырёх функций: <b>linear-gradient</b>, <b>radial-gradient</b>, <b>repeating-linear-gradient</b>, <b>repeating-radial-gradient</b>.</p>
+            <p>Типы поддерживаемых в CSS градиентов:</p>
+            <ul>
+                <li><b>линейный градиент</b> (linear-gradient) &mdash; переход между цветами идёт в одну сторону. Простейший линейный градиент имеет два цвета (две точки), может быть задано несколько точек. <br />
+                    <b>повторяющийся линейный градиент</b> (repeating-linear-gradient) &mdash; позволяет повторять линейный градиент.
+                </li>
+                <li><b>радиальный градиент</b> (radial-gradient) &mdash; переход между цветами идёт как увеличивающаяся окружность.<br />
+                    <b>повторяющийся радиальный градиент</b> (repeating-radial-gradient) &mdash; позволяет повторять радиальный градиент.
+                </li>
+            </ul>
+            <h3>Линейные градиенты</h3>
+            <p>
+                По умолчанию направление градиента сверху вниз.
+            </p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                background: <span class="func">linear-gradient</span>(<strong class="accent">цвет_1, цвет_2</strong>);
+            </blockquote>
+            <p>
+                Но можно задавать направление градиента добавив первым параметром строку <b>to направление</b> (top, left, right, bottom):
+            </p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                background: <span class="func">linear-gradient</span>(<strong class="accent">to направление</strong>, цвет_1, цвет_2);
+            </blockquote>
+            <p data-height="165" data-theme-id="0" data-slug-hash="EgWPKR" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/EgWPKR/">Gradient direction</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Можно задавать угол как направление, тогда добавляемя строка будет состоять из двух слов.
+            </p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                background: <span class="func">linear-gradient</span>(<strong class="accent">to верх_низ лево_право</strong>, цвет_1, цвет_2);
+            </blockquote>
+            <p data-height="265" data-theme-id="0" data-slug-hash="GjWoNg" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/GjWoNg/">Gradient direction corner</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Можно вместо направления для угла задавать градус.
+            </p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                background: <span class="func">linear-gradient</span>(<strong class="accent">градус_deg</strong>, цвет_1, цвет_2);
+            </blockquote>
+            <p data-height="199" data-theme-id="0" data-slug-hash="QKpydp" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/QKpydp/">Gradient direction corner angle</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h2>
                 <a id="animation" class="anchor" href="#animation" aria-hidden="true"><span aria-hidden="true"
                                                                                             class="octicon octicon-link"></span>Простая анимация</a>
