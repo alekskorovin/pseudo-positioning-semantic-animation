@@ -919,7 +919,7 @@ pre {
   margin-bottom: 0.5em;
 }
 blockquote {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 blockquote b {
   display: block;
@@ -1047,4 +1047,36 @@ body {
 #main-content h6, h6 {
   margin: 0.5rem 0;
   font-size: 1rem;
+}
+.scroll-nav {
+    transform: translateX(-290px);
+    transition: transform 0.4s ease-in-out;
+    position: fixed;
+    box-sizing: border-box;
+    width: 300px;
+    left: 0;
+    top: 0;
+    background: #fff;
+    padding: 1rem 1rem 1rem 2rem;
+    z-index: 1;
+    box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.scroll-nav:hover {
+    transform: translateX(0);
+}
+.x {
+    color: #000088;
+}
+.y {
+    color: mediumvioletred;
+}
+.blur {
+    color: darkgreen;
+}
+.stretch {
+    color: #000;
+}
+.color {
+    color: orange;
 }

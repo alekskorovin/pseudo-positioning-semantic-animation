@@ -250,18 +250,136 @@
                 <a id="semantic" class="anchor" href="#semantic" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Обзор новых семантических тегов</a>
             </h2>
+            <h3>Структура со смыслом</h3>
+            <p>Заголовки и подзаголовки прекрасно работают для простых страниц и для разделов. Чтобы разбить содержимое страницы на разделы и более понятные семантические (несущие смысл) структуры есть ряд специальных элементов.</p>
+            <p>Блочные элементы <b>div</b> позволяют структурировать содержание страницы и сделать отображение элементов с помощью CSS таким каким нам нужно по дизайну, но тег<br /> <code class="css">&lt;div&gt;Содержание блока&lt;/div&gt;</code> не несёт никакой смысловой нагрузки.</p>
+            <p>
+                В HTML5 возможно задать отдельные части страницы такие как:<br />
+                <b><a href="https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md#header">шапка</a> (хедер, header)</b>, <b><a href="https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md#footer">подвал</a> (футер, footer)</b>, <b>основную часть</b>, <b>разделы (секции)</b> и <b>навигацию</b>.
+            </p>
+            <h3>Статьи и разделы</h3>
+            <h4>Элемент article</h4>
+            <p>Элемент <b>article</b> используется для разметки отдельного независимого блока контента относящегося по смыслу к одной теме, и который может быть использован отдельно от остальных частей страницы (например вставлен в RSS-ленту), примеры:</p>
+            <ul>
+                <li>Статья блога содержащая свой заголовок, подзаголовки, дату публикации.</li>
+                <li>Несколько элементов <b>article</b> &mdash; список коротких заметок (как в газете).</li>
+                <li>Комментарий пользователя, содержащиий имя поьзователя, дату публикации.</li>
+                <li>Виджеты (блок с прогнозом погоды).</li>
+            </ul>
+            <p>Элемент <b>article</b> может включать в себя собственный <b>header</b>, <b>footer</b>.</p>
+            <blockquote>
+                <b>Особенность</b>
+                Даже если на странице уже есть <strong>h1</strong>, внутри элемента <stong>article</stong> мы можем задать собственный <strong>h1</strong>.
+            </blockquote>
+            <p data-height="448" data-theme-id="0" data-slug-hash="WGpZvz" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/WGpZvz/">Articles</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h4>Элемент section</h4>
+            <p>
+               Элемент <b>section</b> служит для создания раздела, может быть использован для объединения статей (элементов <b>article</b>) по тематике, а так же по разделению контента внутри статьи на разделы.
+            </p>
+            <p data-height="400" data-theme-id="0" data-slug-hash="YGkKVN" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/YGkKVN/">Sections</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Хедеры и футеры (Шапки и подвалы)</h3>
+            <p>
+                <code class="html">&lt;header&gt;</code> и <code class="html">&lt;footer&gt;</code> обозначают ключевые части страницы или статьи.
+            </p>
+            <blockquote>
+                <b>Особенность</b>
+                Для страницы элементы <strong>header</strong> и <strong>footer</strong> должны быть уникальными (заданы один раз).<br />
+                Если же есть элементы <strong>article</strong> (статья) &mdash; внутри них можно так же использовать свой уникальный <strong>header</strong> и <strong>footer</strong>.
+            </blockquote>
+            <p data-height="285" data-theme-id="0" data-slug-hash="PGpYBZ" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/PGpYBZ/">Header and footer</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Основное содержание</h3>
+            <p>
+                Для задания блока с основным содержимым используется элемент <b>main</b>
+            </p>
+            <p data-height="500" data-theme-id="0" data-slug-hash="wzJwkQ" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/wzJwkQ/">Header, footer, main</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Вспомогательное содержание</h3>
+            <p>
+                Для обозначения вспомогательного содержания использвется элемент <b>aside</b>. Наиболее частое использование вместе с CSS: это добавление содержания сбоку &mdash; после применения стилей это выглядит как боковая колонка.
+            </p>
+            <blockquote>
+                <b>Особенность</b>
+                Можно использовать несколько элементов <strong>aside</strong>.<br />
+                Элемент <strong>aside</strong> можно использовать внутри элемента <strong>article</strong>.
+            </blockquote>
+            <p data-height="500" data-theme-id="0" data-slug-hash="dpvypd" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/dpvypd/">Header, footer, main, aside</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Навигация</h3>
+            <p>
+                Для обозначения навигации использвется элемент <b>nav</b> (navigation), внутри которого должны быть ссылки. Чаще всего делается список ссылок. Стандартный способ размещения списка ссылок основного меню сайта внутри элемента <b>header</b>.
+            </p>
+            <p>
+                Элементов навигации на странице может быть неограниченное количество.
+            </p>
+            <p data-height="316" data-theme-id="0" data-slug-hash="WGpNXN" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/WGpNXN/">Nav</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Элементы figure и figcaption</h3>
+            <p>
+                Элемент <b>figure</b> используется для разметки самостоятельной единицы содержания с его описанием внутри элемента <b>figcaption</b>. Такой элемент может быть безболезненно перенесен в другую часть содержания.
+            </p>
+            <p>
+                Чаще всего используется для изображений с подписями к ним, хотя может быть использовано для цитат либо фрагментов кода.
+            </p>
+            <p data-height="335" data-theme-id="0" data-slug-hash="dpvyZj" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/dpvyZj/">Figure and figcaption</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Дополнительная разметка</h3>
+            <h4>Отмеченный текст</h4>
+            <p>
+                Чтобы отметить текст используется элемент <b>mark</b>, по умолчанию к отмеченному тексту применяется ярко-желтый фон.
+            </p>
+            <p data-height="145" data-theme-id="0" data-slug-hash="xEqxZj" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/xEqxZj/">Mark</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h4>Время или дата</h4>
+            <p>
+                Чтобы выделить время или дату в тексте, используется элемент <b>time</b>. Если указывается дата, добавляется атрибут с <a href="https://www.w3.org/TR/html-markup/datatypes.html#common.data.datetime">корректным значением даты</a>.
+            </p>
+            <p data-height="275" data-theme-id="0" data-slug-hash="rryNEm" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/rryNEm/">Time</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <blockquote>
+                <b>Особенность</b>
+                Для того чтобы семантические теги воспринимались старыми браузерами есть специальный <a href="https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md#polyfill">полифил</a> <a href="https://github.com/afarkas/html5shiv">HTML5Shiv</a>.
+            </blockquote>
             <h2>
                 <a id="shadows" class="anchor" href="#shadows" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Тени</a>
             </h2>
+            <p>
+                CSS3 позволяет добавлять тень (shadow) к блокам и тексту с помощью свойств: <b>box-shadow</b> и <b>text-shadow</b>.
+            </p>
+            <p>Каноническое демо <a href="http://css3please.com/">CSS3, please!</a> использует оба свойства.</p>
+            <h3>Свойство box-shadow</h3>
+            <p>Одной строкой задаются все параметры тени блока. Первые четыре параметра задаются в размерных единицах CSS, последний в цветовом формате. Возможно использование нескольких теней, указывая их параметры через запятую, при наложении, первая тень будет размещаться выше, последняя ниже. При скругленных углах элемента, тень так же становится скруглённой.</p>
+            <blockquote>
+                <b>Синтаксис</b>
+                <strong>box-shadow: [inset] <span class="x">сдвиг_X</span> <span class="y">сдвиг_Y</span> <span class="blur">радиус_размытия</span> <span class="stretch">растяжение</span> <span class="color">цвет</span></strong>;
+            </blockquote>
+            <ul>
+                <li><b class="x">сдвиг_X</b> &mdash; смещение тени по горизонтали, положительное значение сдвигает тень вправо, со знаком минус &mdash; влево. <span class="required">обязателен</span>.</li>
+                <li><b class="y">сдвиг_Y</b> &mdash; смещение тени по вертикали, положительное значение сдвигает тень вниз, со знаком минус &mdash; вверх. <span class="required">обязателен</span>.</li>
+                <li><b class="blur">радиус_размытия</b> &mdash; большее значение с большей степенью размывает тень, значение по умолчанию устанавливается равным <b>0</b> &mdash; тень полностью чёткая.</li>
+                <li><b class="stretch">растяжение</b> &mdash; положительное значение увеличиват тень, отрицательное &mdash; уменьшает. Значение по умолчанию <b>0</b> &mdash; тень того же размера.</li>
+                <li><b class="color">цвет</b> &mdash; задаёт цвет тени, может быть задано непрозрачным цветом, а так же с полупрозрачностью в формате RGBA <code class="css">rgba(0, 0, 0, 0.5);</code>.</li>
+                <li><b>inset</b> &mdash; если это значение задано, тень будет рисоваться внутрь элемента.</li>
+            </ul>
+            <p data-height="265" data-theme-id="0" data-slug-hash="mAWyBJ" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/mAWyBJ/">Box shadow</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Свойство text-shadow</h3>
+            <p>Одной строкой задаются все параметры тени текста. Первые три параметра задаются в размерных единицах CSS, последний в цветовом формате. Возможно использование нескольких теней, указывая их параметры через запятую, при наложении, первая тень будет размещаться выше, последняя ниже.</p>
+            <blockquote>
+                <b>Синтаксис</b>
+                <strong>text-shadow: <span class="x">сдвиг_X</span> <span class="y">сдвиг_Y</span> <span class="blur">радиус_размытия</span> <span class="color">цвет</span></strong>;
+            </blockquote>
+            <ul>
+                <li><b class="x">сдвиг_X</b> &mdash; смещение тени по горизонтали, положительное значение сдвигает тень вправо, со знаком минус &mdash; влево. <span class="required">обязателен</span>.</li>
+                <li><b class="y">сдвиг_Y</b> &mdash; смещение тени по вертикали, положительное значение сдвигает тень вниз, со знаком минус &mdash; вверх. <span class="required">обязателен</span>.</li>
+                <li><b class="blur">радиус_размытия</b> &mdash; большее значение с большей степенью размывает тень, значение по умолчанию устанавливается равным <b>0</b> &mdash; тень полностью чёткая.</li>
+                <li><b class="color">цвет</b> &mdash; задаёт цвет тени, может быть задано непрозрачным цветом, а так же с полупрозрачностью в формате RGBA <code class="css">rgba(0, 0, 0, 0.5);</code>.</li>
+            </ul>
+            <p data-height="225" data-theme-id="0" data-slug-hash="JRWogP" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/JRWogP/">Text shadow</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
             <h2>
                 <a id="gradients" class="anchor" href="#gradients" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Градиенты</a>
             </h2>
+            
             <h2>
                 <a id="animation" class="anchor" href="#animation" aria-hidden="true"><span aria-hidden="true"
                                                                                             class="octicon octicon-link"></span>Простая анимация</a>
             </h2>
+            <h3><a href="https://alekskorovin.github.io/htmlcss/">Анимация в CSS</a></h3>
 
         </section>
 
@@ -279,5 +397,16 @@
 <script src="javascripts/highlight/highlight.pack.js"></script>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+<script src="javascripts/jquery.js"></script>
+<script src="javascripts/jquery.scrollNav.min.js"></script>
+<script>
+    $('#main-content').scrollNav({
+        sections: 'h2',
+        subSections: true,
+        sectionElem: 'div',
+        showHeadline: true,
+        headlineText: 'Перейти к'
+    });
+</script>
 </body>
 </html>
