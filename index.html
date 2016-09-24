@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
@@ -40,7 +39,7 @@
                 <b>Синтаксис:</b>
                 селектор<strong>:псевдо_класс</strong> { свойство: значение; }
             </blockquote>
-            <p>Более новый синтаксис не всегда поддерживается браузерами (два двоеточия):</p>
+            <p>Более новый синтаксис CSS3, не всегда поддерживается браузерами (два двоеточия).</p>
             <blockquote>
                 <b>Синтаксис:</b>
                 селектор<strong>::псевдо_класс</strong> { свойство: значение; }
@@ -80,7 +79,7 @@
                 <b>Синтаксис:</b>
                 селектор<strong>:псевдо_элемент</strong> { свойство: значение; }
             </blockquote>
-            <p>Более новый синтаксис не всегда поддерживается браузерами (два двоеточия):</p>
+            <p>Более новый синтаксис CSS3, не всегда поддерживается браузерами (два двоеточия):</p>
             <blockquote>
                 <b>Синтаксис:</b>
                 селектор<strong>::псевдо_элемент</strong> { свойство: значение; }
@@ -89,49 +88,348 @@
             <p>
                 <b>first-letter</b> &mdash; псевдо-элемент из CSS1 для выбора первой буквы элемента.
             </p>
-            <p data-height="430" data-theme-id="0" data-slug-hash="BLpzPy" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/BLpzPy/">First letter pseudo classes</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p data-height="430" data-theme-id="0" data-slug-hash="BLpzPy" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/BLpzPy/">First letter pseudo classes</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h3>Псевдоэлемент для выбора первой строки</h3>
             <p>
                 <b>first-line</b> &mdash; псевдо-элемент из CSS1 для выбора первой строки элемента.
             </p>
-            <p data-height="452" data-theme-id="0" data-slug-hash="LRxkXX" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/LRxkXX/">First line pseudo element</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p data-height="452" data-theme-id="0" data-slug-hash="LRxkXX" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/LRxkXX/">First line pseudo element</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
             <h3>Псевдоэлементы before и after</h3>
+
             <p>
                 Псевдоэлементы, которые используется для добавления контента до (<b>before</b>) и после (<b>after</b>) содержимого элемента, к которому он добавляется.
             </p>
             <p>Эти псевдоэлементы и их контент используются для декоративных целей, например можно выводить все ссылки в явном виде при печати страницы.</p>
+<<<<<<< HEAD
             <p>Псевдоэлементы <b>before</b> и <b>after</b> это очень мощный инструмент для добавления декоративных CSS-свойств.</p>
 
 
 
+=======
+            <p>Псевдоэлементы <b>before</b> и <b>after</b> это очень мощный инструмент для добавления декоративных CSS-свойств. Кроме того можно делать всплывающие подсказки, размещая текст для подсказок в атрибутах элемента.</p>
+            <p>Псевдоэлементы <b>before</b> и <b>after</b> <b>испльзуются только вместе</b> со свйойством <b>content</b> в котором размещается дополнительный контент, выводимый из CSS в HTML либо использующий значения атрибутов элемента.</p>
+            <h4>Значения свойства content</h4>
+            <ul>
+                <li><b>'строка'</b> &mdash; возможно размещение любого текста в кавычках.</li>
+                <li><b>url(путь_к_изображению)</b> &mdash; возможно указывать URL (путь, адрес) к изображению в кавычках.</li>
+                <li><b>open-quote</b> &mdash; открывающая кавычка.</li>
+                <li><b>close-quote</b> &mdash; закрывающая кавычка.</li>
+                <li><b>attr(название_атрибута)</b> &mdash; выводит текст указанный как свойсто атрибута.</li>
+            </ul>
+            <h5>Вывод строки</h5>
+            <p data-height="290" data-theme-id="0" data-slug-hash="BLpRwP" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/BLpRwP/">Pseudo element before/after</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h5>Вывод изображения</h5>
+            <p>Используется редко, потому что сложно контролировать поведение выводимого изображения.</p>
+            <p data-height="338" data-theme-id="0" data-slug-hash="xEgdJR" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/xEgdJR/">Pseudo element before image</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h5>Открывающие и закрывающие кавычки</h5>
+            <p data-height="214" data-theme-id="0" data-slug-hash="ampWPB" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/ampWPB/">Pseudo element before/after - open/close quote</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h5>Значения атрибутов</h5>
+            <p>
+                Текст можно брать из атрибутов элемента:
+            </p>
+            <p data-height="179" data-theme-id="0" data-slug-hash="Kgaqgd" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/Kgaqgd/">Pseudo element before/after - attr</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Можно выводить URL для ссылки только при наведении на неё создавать tooltip (всыплывающую подсказку с декоративными стилями):
+            </p>
+            <p data-height="248" data-theme-id="0" data-slug-hash="dpNRvK" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/dpNRvK/">Pseudo element before/after - attr - tooltip</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Можно использовать собственные атрибуты для хранения текста для всплывающих подсказок:
+            </p>
+            <p data-height="215" data-theme-id="0" data-slug-hash="bwgRaN" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/bwgRaN/">Pseudo element before/after - attr - tooltip data attributes</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Можно использовать для декоративных целей:
+            </p>
+            <p data-height="480" data-theme-id="0" data-slug-hash="EgkXpQ" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/EgkXpQ/">Pseudo element before/after - decorative</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+>>>>>>> 230dc9d1752cf5b064955bdeaf0d5603dba9845e
             <h3>Псевдоэлемент ::selection</h3>
+            <p>Псевдоэлемент <b>::selection</b> позволяет переопределить цвета по умолчанию области выделенного текста.</p>
+            <p data-height="282" data-theme-id="0" data-slug-hash="QKdrjv" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/QKdrjv/">Pseudo element selection</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h3>Псевдоэлемент ::placeholder</h3>
-            <p>Существуют другие псевдоэлементы которые используются с браузерными префиксами, и которые не входят в стандарты, но могут использоваться для задания специфичных для браузеров стилей.</p>
+            <p>Существуют другие псевдоэлементы которые используются с браузерными префиксами, и которые не входят в стандарты, но могут использоваться для задания специфичных для браузеров стилей, например <b>user-select</b> (запрещает выделять текст):</p>
+            <p data-height="258" data-theme-id="0" data-slug-hash="ZpLJzA" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/ZpLJzA/">Pseudo element user select none</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h2>
                 <a id="floats" class="anchor" href="#floats" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Флоаты</a>
             </h2>
+            <p>
+                Для того чтобы сделать блок "плавающим" (float - floating) для элемента необходимо применить свойство <b>float</b>, которое может принимать три значения:
+            </p>
+            <ul>
+                <li><b>left</b> &mdash; блок прибивается к <b>левому</b> краю доступной области и контент обтекает блок справа.</li>
+                <li><b>right</b> &mdash; блок прибивается к <b>правому</b> краю доступной области  и контент обтекает блок слева.</li>
+                <li><b>none</b> &mdash; отменяются свойства left/right.</li>
+            </ul>
+            <blockquote>
+                <strong>Особенность</strong>
+                <p>
+                    Когда элементу задано свойство float &mdash; left или right он автоматически становится блочным.
+                </p>
+            </blockquote>
+            <p data-height="380" data-theme-id="0" data-slug-hash="wzgAKm" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/wzgAKm/">Floating elements</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p data-height="380" data-theme-id="0" data-slug-hash="RGKLGg" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/RGKLGg/">Floating elements</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>Если два элемента флоатнуты влево то они идут рядом слева направо до тех пор пока есть доступное место, если флоатнутый элемент не помещается по горизонтали, он переносится под флоатнутый элемент.</p>
+            <p>Если элемент флоатнут вправо, второй элемент флоатнутый вправо будет слева от него и так же перенесётся под первый флоатнутый элемент если нет места по горизонтали.</p>
+            <p data-height="362" data-theme-id="0" data-slug-hash="kkgGxN" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/kkgGxN/">Floating elements several</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p data-height="389" data-theme-id="0" data-slug-hash="kkgGvN" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/kkgGvN/">Floating elements several</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>Если нужно чтобы следующий блок не обтекал флоатнутый блок, а размещался под ним, можно использовать свойство <b>clear</b>, которое может принимать значения:</p>
+            <ul>
+                <li><b>left</b> &mdash; очистит поток флоатнутых элементов слева.</li>
+                <li><b>right</b> &mdash; очистит поток флоатнутых элементов справа.</li>
+                <li><b>both</b> &mdash; очистит поток флоатнутых элементов и слева и справа.</li>
+            </ul>
+            <p data-height="265" data-theme-id="0" data-slug-hash="LRxzBy" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/LRxzBy/">Floating elements clear</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                С помощью флоат-элементов можно задавать структурированный внешний вид элементов, используя отступы и флоаты можно создавать сетки, размещать элементы так как нам надо.
+            </p>
+            <p data-height="290" data-theme-id="0" data-slug-hash="QKdqoX" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/QKdqoX/">Floating elements grids</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+
             <h2>
                 <a id="position" class="anchor" href="#position" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Позиционирование</a>
             </h2>
+            <p>Чтобы задать позиционирование элемента используется свойсво <b>position</b>. По умолчанию у элементов значение <b>position</b> это <b>static</b>.</p>
+            <p>Все значения свойства <b>position</b>:</p>
+            <ul>
+                <li><b>static</b> &mdash; нормальное позиционирование, элемент участвует в общем потоке элементов (элементы идут один под другим).</li>
+                <li><b>relative</b> &mdash; позиционирование похожее на <b>static</b>, но при этом свойстве элемент может быть вынесен на более высокий или более низкий слой с помощью свойства <b>z-index</b>, а так же элемент может быть смещён относительно своего нормального положения с помощью свойств:
+                    <ul>
+                        <li><b>top</b> &mdash; отступ сверху.</li>
+                        <li><b>left</b> &mdash; отступ слева.</li>
+                        <li><b>right</b> &mdash; отступ справа.</li>
+                        <li><b>bottom</b> &mdash; отступ снизу.</li>
+                    </ul>
+                    При <code class="css">position: relative</code> элементом резервируется то же место, что и до смещения элемента.<br />
+                    В этом случае свойства <b>top, left, right, bottom</b> работают так же как и внешний отступ (margin).
+                </li>
+                <li>
+                    <b>absolute</b> &mdash; при этом элемент вообще выпадает из потока других элементов, и его позиционирования можно менять отступами <b>margin</b> и свойствми <b>top</b>, <b>left</b>, <b>right</b>, <b>bottom</b>. Этот элемент перестает влиять на другие элементы и не подвержен влияию других элементов кроме родителя с <code class="css">position: relative;</code>
+                    При этом позиционировании свойства ведут себя так:
+                    <ul>
+                        <li>
+                            <p>
+                                Если элемент не находится внутри другого элемента с <code class="css">position: relative</code> и ни одно из свойств <b>top, left, right, bottom</b> не задано,
+                                то элемент повисает в "воздухе" над остальными элементами идущими в общем потоке.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Если элемент не внутри другого элемента с <code class="css">position: relative</code> и задано одно из свойств <b>top, left, right, bottom</b>, то эти свойства работают так:
+                            </p>
+                            <ul>
+                                <li><code class="css">top: 10px;</code> &mdash; элемент прилипает к верхней части экрана <b>body</b> и смещается вниз на 10px.</li>
+                                <li><code class="css">left: 1em;</code> &mdash; элемент прилипает к левой части экрана и смещается впрвао на 1em.</li>
+                                <li><code class="css">right: 0;</code> &mdash; элемент прилипает к правой части экрана.</li>
+                                <li><code class="css">bottom: 1rem;</code> &mdash; элемент прилипает к нижней части <b>видимой области</b> (НЕ ЭКРАНА) и смещается вверх на 1rem.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>
+                                Если элемент <b>внутри</b> другого элемента с <code class="css">position: relative</code> то "прилипание" происходит не к экрану, а к краям этого родительского элемента (смещается элемент так же).
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>fixed</b> &mdash; при таком позиционировании элемент ведёт себя почти так же как и при <b>absolute</b>, но "прилипает" к границам экрана вне зависимости от родителей с <code class="css">position: relative;</code>
+                </li>
+            </ul>
+            <h3>Свойства top, left, right, bottom</h3>
+            <p>
+                Значения свойств задаются в размерных CSS-единицах (px, em, rem, % ...), если задаётся значение в процентах, используются размеры родителя относительно которого эти проценты рассчитываются.
+            </p>
+            <p>Для сброса ранее заданных значений использвется свойство <b>auto</b>: чтобы перебить <code class="css">left: 50%;</code> надо задать <code class="css">left: auto;</code>.</p>
+            <h3>Свойство z-index</h3>
+            <p>
+                Свойство <b>z-index</b> задаёт порядок слоя в котором находится элемент при position <b>relative</b>, <b>absolute</b>, <b>fixed</b>. Значением может быть целое число либо значение по умолчанию <b>auto</b>.
+            </p>
+            <h3>Относительное позиционирование (position: relative).</h3>
+            <p data-height="321" data-theme-id="0" data-slug-hash="vXgppN" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/vXgppN/">positioning relative</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+            <p data-height="320" data-theme-id="0" data-slug-hash="gwgojL" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/gwgojL/">positioning relative z-index</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Абсолютное позиционирование (position: absolute).</h3>
+            <p data-height="265" data-theme-id="0" data-slug-hash="vXgwAZ" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/vXgwAZ/">Position absolute</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p data-height="370" data-theme-id="0" data-slug-hash="JREqZb" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/JREqZb/">Position absolute two blocks</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Фиксированное позиционирование (position: fixed)</h3>
+            <p data-height="347" data-theme-id="0" data-slug-hash="ORWYZB" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/ORWYZB/">Position absolute and fixed</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h2>
                 <a id="semantic" class="anchor" href="#semantic" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Обзор новых семантических тегов</a>
             </h2>
+            <h3>Структура со смыслом</h3>
+            <p>Заголовки и подзаголовки прекрасно работают для простых страниц и для разделов. Чтобы разбить содержимое страницы на разделы и более понятные семантические (несущие смысл) структуры есть ряд специальных элементов.</p>
+            <p>Блочные элементы <b>div</b> позволяют структурировать содержание страницы и сделать отображение элементов с помощью CSS таким каким нам нужно по дизайну, но тег<br /> <code class="css">&lt;div&gt;Содержание блока&lt;/div&gt;</code> не несёт никакой смысловой нагрузки.</p>
+            <p>
+                В HTML5 возможно задать отдельные части страницы такие как:<br />
+                <b><a href="https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md#header">шапка</a> (хедер, header)</b>, <b><a href="https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md#footer">подвал</a> (футер, footer)</b>, <b>основную часть</b>, <b>разделы (секции)</b> и <b>навигацию</b>.
+            </p>
+            <h3>Статьи и разделы</h3>
+            <h4>Элемент article</h4>
+            <p>Элемент <b>article</b> используется для разметки отдельного независимого блока контента относящегося по смыслу к одной теме, и который может быть использован отдельно от остальных частей страницы (например вставлен в RSS-ленту), примеры:</p>
+            <ul>
+                <li>Статья блога содержащая свой заголовок, подзаголовки, дату публикации.</li>
+                <li>Несколько элементов <b>article</b> &mdash; список коротких заметок (как в газете).</li>
+                <li>Комментарий пользователя, содержащиий имя поьзователя, дату публикации.</li>
+                <li>Виджеты (блок с прогнозом погоды).</li>
+            </ul>
+            <p>Элемент <b>article</b> может включать в себя собственный <b>header</b>, <b>footer</b>.</p>
+            <blockquote>
+                <b>Особенность</b>
+                Даже если на странице уже есть <strong>h1</strong>, внутри элемента <stong>article</stong> мы можем задать собственный <strong>h1</strong>.
+            </blockquote>
+            <p data-height="448" data-theme-id="0" data-slug-hash="WGpZvz" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/WGpZvz/">Articles</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h4>Элемент section</h4>
+            <p>
+               Элемент <b>section</b> служит для создания раздела, может быть использован для объединения статей (элементов <b>article</b>) по тематике, а так же по разделению контента внутри статьи на разделы.
+            </p>
+            <p data-height="400" data-theme-id="0" data-slug-hash="YGkKVN" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/YGkKVN/">Sections</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Хедеры и футеры (Шапки и подвалы)</h3>
+            <p>
+                <code class="html">&lt;header&gt;</code> и <code class="html">&lt;footer&gt;</code> обозначают ключевые части страницы или статьи.
+            </p>
+            <blockquote>
+                <b>Особенность</b>
+                Для страницы элементы <strong>header</strong> и <strong>footer</strong> должны быть уникальными (заданы один раз).<br />
+                Если же есть элементы <strong>article</strong> (статья) &mdash; внутри них можно так же использовать свой уникальный <strong>header</strong> и <strong>footer</strong>.
+            </blockquote>
+            <p data-height="285" data-theme-id="0" data-slug-hash="PGpYBZ" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/PGpYBZ/">Header and footer</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Основное содержание</h3>
+            <p>
+                Для задания блока с основным содержимым используется элемент <b>main</b>
+            </p>
+            <p data-height="500" data-theme-id="0" data-slug-hash="wzJwkQ" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/wzJwkQ/">Header, footer, main</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Вспомогательное содержание</h3>
+            <p>
+                Для обозначения вспомогательного содержания использвется элемент <b>aside</b>. Наиболее частое использование вместе с CSS: это добавление содержания сбоку &mdash; после применения стилей это выглядит как боковая колонка.
+            </p>
+            <blockquote>
+                <b>Особенность</b>
+                Можно использовать несколько элементов <strong>aside</strong>.<br />
+                Элемент <strong>aside</strong> можно использовать внутри элемента <strong>article</strong>.
+            </blockquote>
+            <p data-height="500" data-theme-id="0" data-slug-hash="dpvypd" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/dpvypd/">Header, footer, main, aside</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Навигация</h3>
+            <p>
+                Для обозначения навигации использвется элемент <b>nav</b> (navigation), внутри которого должны быть ссылки. Чаще всего делается список ссылок. Стандартный способ размещения списка ссылок основного меню сайта внутри элемента <b>header</b>.
+            </p>
+            <p>
+                Элементов навигации на странице может быть неограниченное количество.
+            </p>
+            <p data-height="316" data-theme-id="0" data-slug-hash="WGpNXN" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/WGpNXN/">Nav</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Элементы figure и figcaption</h3>
+            <p>
+                Элемент <b>figure</b> используется для разметки самостоятельной единицы содержания с его описанием внутри элемента <b>figcaption</b>. Такой элемент может быть безболезненно перенесен в другую часть содержания.
+            </p>
+            <p>
+                Чаще всего используется для изображений с подписями к ним, хотя может быть использовано для цитат либо фрагментов кода.
+            </p>
+            <p data-height="335" data-theme-id="0" data-slug-hash="dpvyZj" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/dpvyZj/">Figure and figcaption</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Дополнительная разметка</h3>
+            <h4>Отмеченный текст</h4>
+            <p>
+                Чтобы отметить текст используется элемент <b>mark</b>, по умолчанию к отмеченному тексту применяется ярко-желтый фон.
+            </p>
+            <p data-height="145" data-theme-id="0" data-slug-hash="xEqxZj" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/xEqxZj/">Mark</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h4>Время или дата</h4>
+            <p>
+                Чтобы выделить время или дату в тексте, используется элемент <b>time</b>. Если указывается дата, добавляется атрибут с <a href="https://www.w3.org/TR/html-markup/datatypes.html#common.data.datetime">корректным значением даты</a>.
+            </p>
+            <p data-height="275" data-theme-id="0" data-slug-hash="rryNEm" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/rryNEm/">Time</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <blockquote>
+                <b>Особенность</b>
+                Для того чтобы семантические теги воспринимались старыми браузерами есть специальный <a href="https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md#polyfill">полифил</a> <a href="https://github.com/afarkas/html5shiv">HTML5Shiv</a>.
+            </blockquote>
             <h2>
                 <a id="shadows" class="anchor" href="#shadows" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Тени</a>
             </h2>
+            <p>
+                CSS3 позволяет добавлять тень (shadow) к блокам и тексту с помощью свойств: <b>box-shadow</b> и <b>text-shadow</b>.
+            </p>
+            <p>Каноническое демо <a href="http://css3please.com/">CSS3, please!</a> использует оба свойства.</p>
+            <h3>Свойство box-shadow</h3>
+            <p>Одной строкой задаются все параметры тени блока. Первые четыре параметра задаются в размерных единицах CSS, последний в цветовом формате. Возможно использование нескольких теней, указывая их параметры через запятую, при наложении, первая тень будет размещаться выше, последняя ниже. При скругленных углах элемента, тень так же становится скруглённой.</p>
+            <blockquote>
+                <b>Синтаксис</b>
+                <strong>box-shadow: [inset] <span class="x">сдвиг_X</span> <span class="y">сдвиг_Y</span> <span class="blur">радиус_размытия</span> <span class="stretch">растяжение</span> <span class="color">цвет</span></strong>;
+            </blockquote>
+            <ul>
+                <li><b class="x">сдвиг_X</b> &mdash; смещение тени по горизонтали, положительное значение сдвигает тень вправо, со знаком минус &mdash; влево. <span class="required">обязателен</span>.</li>
+                <li><b class="y">сдвиг_Y</b> &mdash; смещение тени по вертикали, положительное значение сдвигает тень вниз, со знаком минус &mdash; вверх. <span class="required">обязателен</span>.</li>
+                <li><b class="blur">радиус_размытия</b> &mdash; большее значение с большей степенью размывает тень, значение по умолчанию устанавливается равным <b>0</b> &mdash; тень полностью чёткая.</li>
+                <li><b class="stretch">растяжение</b> &mdash; положительное значение увеличиват тень, отрицательное &mdash; уменьшает. Значение по умолчанию <b>0</b> &mdash; тень того же размера.</li>
+                <li><b class="color">цвет</b> &mdash; задаёт цвет тени, может быть задано непрозрачным цветом, а так же с полупрозрачностью в формате RGBA <code class="css">rgba(0, 0, 0, 0.5);</code>.</li>
+                <li><b>inset</b> &mdash; если это значение задано, тень будет рисоваться внутрь элемента.</li>
+            </ul>
+            <p data-height="265" data-theme-id="0" data-slug-hash="mAWyBJ" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/mAWyBJ/">Box shadow</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Свойство text-shadow</h3>
+            <p>Одной строкой задаются все параметры тени текста. Первые три параметра задаются в размерных единицах CSS, последний в цветовом формате. Возможно использование нескольких теней, указывая их параметры через запятую, при наложении, первая тень будет размещаться выше, последняя ниже.</p>
+            <blockquote>
+                <b>Синтаксис</b>
+                <strong>text-shadow: <span class="x">сдвиг_X</span> <span class="y">сдвиг_Y</span> <span class="blur">радиус_размытия</span> <span class="color">цвет</span></strong>;
+            </blockquote>
+            <ul>
+                <li><b class="x">сдвиг_X</b> &mdash; смещение тени по горизонтали, положительное значение сдвигает тень вправо, со знаком минус &mdash; влево. <span class="required">обязателен</span>.</li>
+                <li><b class="y">сдвиг_Y</b> &mdash; смещение тени по вертикали, положительное значение сдвигает тень вниз, со знаком минус &mdash; вверх. <span class="required">обязателен</span>.</li>
+                <li><b class="blur">радиус_размытия</b> &mdash; большее значение с большей степенью размывает тень, значение по умолчанию устанавливается равным <b>0</b> &mdash; тень полностью чёткая.</li>
+                <li><b class="color">цвет</b> &mdash; задаёт цвет тени, может быть задано непрозрачным цветом, а так же с полупрозрачностью в формате RGBA <code class="css">rgba(0, 0, 0, 0.5);</code>.</li>
+            </ul>
+            <p data-height="225" data-theme-id="0" data-slug-hash="JRWogP" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/JRWogP/">Text shadow</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
             <h2>
                 <a id="gradients" class="anchor" href="#gradients" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Градиенты</a>
             </h2>
+            <p data-height="163" data-theme-id="0" data-slug-hash="qaAOZr" data-default-tab="result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/qaAOZr/">Gradient</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>Градиент это изображение на котором цвета плавно переходят из одного в другой (градиенты называют цветовыми растяжками). Чтобы не использовать фоновое изображение для градиента, ведь для загрузки изображения требуется дополнительный запрос на сервер, в CSS добавили четыре функции, позволяющих нарисовать нужный градиент используя заданные параметры.</p>
+            <p>Чтобы отобразить градиент используются свойства <b>background</b> или <b>background-image</b>, и вместо изображения использовать одну из четырёх функций: <b>linear-gradient</b>, <b>radial-gradient</b>, <b>repeating-linear-gradient</b>, <b>repeating-radial-gradient</b>.</p>
+            <p>Типы поддерживаемых в CSS градиентов:</p>
+            <ul>
+                <li><b>линейный градиент</b> (linear-gradient) &mdash; переход между цветами идёт в одну сторону. Простейший линейный градиент имеет два цвета (две точки), может быть задано несколько точек. <br />
+                    <b>повторяющийся линейный градиент</b> (repeating-linear-gradient) &mdash; позволяет повторять линейный градиент.
+                </li>
+                <li><b>радиальный градиент</b> (radial-gradient) &mdash; переход между цветами идёт как увеличивающаяся окружность.<br />
+                    <b>повторяющийся радиальный градиент</b> (repeating-radial-gradient) &mdash; позволяет повторять радиальный градиент.
+                </li>
+            </ul>
+            <h3>Линейные градиенты</h3>
+            <p>
+                По умолчанию направление градиента сверху вниз.
+            </p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                background: <span class="func">linear-gradient</span>(<strong class="accent">цвет_1, цвет_2</strong>);
+            </blockquote>
+            <p>
+                Но можно задавать направление градиента добавив первым параметром строку <b>to направление</b> (top, left, right, bottom):
+            </p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                background: <span class="func">linear-gradient</span>(<strong class="accent">to направление</strong>, цвет_1, цвет_2);
+            </blockquote>
+            <p data-height="165" data-theme-id="0" data-slug-hash="EgWPKR" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/EgWPKR/">Gradient direction</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Можно задавать угол как направление, тогда добавляемя строка будет состоять из двух слов.
+            </p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                background: <span class="func">linear-gradient</span>(<strong class="accent">to верх_низ лево_право</strong>, цвет_1, цвет_2);
+            </blockquote>
+            <p data-height="265" data-theme-id="0" data-slug-hash="GjWoNg" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/GjWoNg/">Gradient direction corner</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Можно вместо направления для угла задавать градус.
+            </p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                background: <span class="func">linear-gradient</span>(<strong class="accent">градус_deg</strong>, цвет_1, цвет_2);
+            </blockquote>
+            <p data-height="199" data-theme-id="0" data-slug-hash="QKpydp" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/QKpydp/">Gradient direction corner angle</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h2>
                 <a id="animation" class="anchor" href="#animation" aria-hidden="true"><span aria-hidden="true"
                                                                                             class="octicon octicon-link"></span>Простая анимация</a>
             </h2>
+            <h3><a href="https://alekskorovin.github.io/htmlcss/">Анимация в CSS</a></h3>
 
         </section>
 
@@ -149,5 +447,16 @@
 <script src="javascripts/highlight/highlight.pack.js"></script>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+<script src="javascripts/jquery.js"></script>
+<script src="javascripts/jquery.scrollNav.min.js"></script>
+<script>
+    $('#main-content').scrollNav({
+        sections: 'h2',
+        subSections: true,
+        sectionElem: 'div',
+        showHeadline: true,
+        headlineText: 'Перейти к'
+    });
+</script>
 </body>
 </html>
