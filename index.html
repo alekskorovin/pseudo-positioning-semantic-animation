@@ -478,8 +478,14 @@
             <p data-height="183" data-theme-id="0" data-slug-hash="amWdJG" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/amWdJG/">Radial gradient - shape circle, color stops</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h4>Позиция элемента</h4>
             <p>
-                
+                Задать позицию центральной точки радиального градиента можно добавив первым параметром <b>at координата_X координата_Y</b>.<br />
+                Координаты <b>at 0 0</b> &mdash; это левый верхний угол, <b>at 100% 100%</b> &mdash; правый нижний угол.
             </p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                background: <span class="func">radial-gradient</span>(<span class="accent">at координата_X координата_Y</span>, цвет_1, цвет_2);
+            </blockquote>
+            <p data-height="265" data-theme-id="0" data-slug-hash="pEPbRr" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/pEPbRr/">Radial gradient - shape circle,  position</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h4>Размер градиента</h4>
             <p>Размер градиента задаётся одним из четырёх значений:</p>
             <h5>closest-side</h5>
@@ -490,9 +496,10 @@
             <h5>farthest-side</h5>
             <p>Если это окружность &mdash; размер градиента (радиус окружности) совпадает с размером большей стороны элемента (остальная часть градиента обрезается):</p>
             <p data-height="265" data-theme-id="0" data-slug-hash="dpWrpo" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/dpWrpo/">Radial gradient - shape circle,  size  - farthest-side</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-            <p>Если это эллипс, то размер градиента совпадает с размером элемента:</p>
-
-
+            <p>Если это эллипс, то эффект виден при заданной позиции &mdash; градиент будет растянут до краёв элемента:</p>
+            <p data-height="268" data-theme-id="0" data-slug-hash="kkyXor" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/kkyXor/">Radial gradient - shape ellipse,  size  - farthest-side</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h5>closest-corner</h5>
+            
             <h2>
                 <a id="animation" class="anchor" href="#animation" aria-hidden="true"><span aria-hidden="true"
                                                                                             class="octicon octicon-link"></span>Простая анимация</a>
