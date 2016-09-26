@@ -388,7 +388,7 @@
             </ul>
             <h3>Линейные градиенты</h3>
             <p>
-                По умолчанию направление градиента сверху вниз.
+                По умолчанию направление градиента сверху вниз &mdash; первый в списке цвет - сверху, последний - снизу.
             </p>
             <blockquote>
                 <b>Синтаксис:</b>
@@ -418,6 +418,74 @@
                 background: <span class="func">linear-gradient</span>(<strong class="accent">градус_deg</strong>, цвет_1, цвет_2);
             </blockquote>
             <p data-height="199" data-theme-id="0" data-slug-hash="QKpydp" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/QKpydp/">Gradient direction corner angle</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+            <p>
+                В градиенте Можно задать несколько цветов (точек на шкале распределения цветов). Вот так можно нарисовать радугу:
+            </p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                background: <span class="func">linear-gradient</span>(<strong class="accent">цвет_1, цвет_2, цвет_3, цвет_4</strong>);
+            </blockquote>
+            <p data-height="257" data-theme-id="0" data-slug-hash="amWvLp" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/amWvLp/">Gradient colors - rainbow</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Можно задавать нк каком расстоянии будет находиться цветовая точка. Может задаваться в процентах либо других единицах.
+            </p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                background: <span class="func">linear-gradient</span>(цвет_1 <strong class="accent">расстояние_цвета_1</strong>, цвет_2 <strong class="accent">расстояние_цвета_2</strong>, цвет_3 <strong class="accent">расстояние_цвета_3</strong></strong>);
+            </blockquote>
+            <p data-height="166" data-theme-id="0" data-slug-hash="rrmxLy" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/rrmxLy/">Gradient - cplor stops</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <hr/>
+            <blockquote>
+                <b>Особенность</b>
+                Градиенты не работают в IE9 и более ранних версиях, для добавления градиента в IE9 и в более старые браузеры можно использовать фоновое изображение.
+            </blockquote>
+            <blockquote>
+                <b>Инструмент</b>
+                <a href="http://www.colorzilla.com/gradient-editor/">Ultimate CSS Gradient Generator</a>
+            </blockquote>
+            <hr/>
+            <h3>Радиальные градиенты</h3>
+            <p>
+                Это градиенты с цветом в центральной точке переходящим в другой цвет в форме окружности, выглядит это как круги по воде. Функция <b>radial-gradient</b> создает изображение с указанным центром, и формой.
+                По умолчанию форма градиента эллипс, координата центра формы это центр элемента.
+            </p>
+            <blockquote>
+                <b>Синтаксис:</b>
+                background: <span class="func">radial-gradient</span>(<span class="accent">цвет_1, цвет_2</span>);
+            </blockquote>
+            <p data-height="211" data-theme-id="0" data-slug-hash="gwWajk" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/gwWajk/">Radial gradient</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>Можно задать форму радиального градиента:</p>
+            <ul>
+                <li><b>ellips</b> &mdash; значение по умолчанию, овальная форма (эллипс).</li>
+                <li><b>circle</b> &mdash; круглая форма (окружность).</li>
+            </ul>
+            <blockquote>
+                <b>Синтаксис:</b>
+                background: <span class="func">radial-gradient</span>(<span class="accent">форма_градиента</span>, цвет_1, цвет_2);
+            </blockquote>
+            <p data-height="178" data-theme-id="0" data-slug-hash="amWvxL" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/amWvxL/">Radial gradient - shape circle</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Так же можно задавать несколько цветов и расстояние цветовой точки от центров эллипса или центра окружности.
+            </p>
+            <p data-height="183" data-theme-id="0" data-slug-hash="amWdJG" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/amWdJG/">Radial gradient - shape circle, color stops</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h4>Позиция элемента</h4>
+            <p>
+                
+            </p>
+            <h4>Размер градиента</h4>
+            <p>Размер градиента задаётся одним из четырёх значений:</p>
+            <h5>closest-side</h5>
+            <p>Если это окружность &mdash; размер градиента (радиус окружности) совпадает с размером меньшей стороны элемента:</p>
+            <p data-height="208" data-theme-id="0" data-slug-hash="ALRKBJ" data-default-tab="css,result" data-user="alekskorovin" data-editable="true" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/ALRKBJ/">Radial gradient - shape circle,  size  - closest-side</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>Если это эллипс, то размер градиента совпадает с размером элемента:</p>
+            <p data-height="229" data-theme-id="0" data-slug-hash="gwWAPL" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/gwWAPL/">Radial gradient - shape ellipse,  size  - closest-side</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h5>farthest-side</h5>
+            <p>Если это окружность &mdash; размер градиента (радиус окружности) совпадает с размером большей стороны элемента (остальная часть градиента обрезается):</p>
+            <p data-height="265" data-theme-id="0" data-slug-hash="dpWrpo" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/dpWrpo/">Radial gradient - shape circle,  size  - farthest-side</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>Если это эллипс, то размер градиента совпадает с размером элемента:</p>
+
+
             <h2>
                 <a id="animation" class="anchor" href="#animation" aria-hidden="true"><span aria-hidden="true"
                                                                                             class="octicon octicon-link"></span>Простая анимация</a>
