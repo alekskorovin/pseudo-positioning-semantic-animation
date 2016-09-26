@@ -487,7 +487,7 @@
             </blockquote>
             <p data-height="265" data-theme-id="0" data-slug-hash="pEPbRr" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/pEPbRr/">Radial gradient - shape circle,  position</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h4>Размер градиента</h4>
-            <p>Размер градиента задаётся одним из четырёх значений:</p>
+            <p>Размер градиента задаётся одним из четырёх значений: <b>closest-side, farthest-side, closest-corner, farthest-color</b>.</p>
             <h5>closest-side</h5>
             <p>Если это окружность &mdash; размер градиента (радиус окружности) совпадает с размером меньшей стороны элемента:</p>
             <p data-height="208" data-theme-id="0" data-slug-hash="ALRKBJ" data-default-tab="css,result" data-user="alekskorovin" data-editable="true" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/ALRKBJ/">Radial gradient - shape circle,  size  - closest-side</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
@@ -499,7 +499,17 @@
             <p>Если это эллипс, то эффект виден при заданной позиции &mdash; градиент будет растянут до краёв элемента:</p>
             <p data-height="268" data-theme-id="0" data-slug-hash="kkyXor" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/kkyXor/">Radial gradient - shape ellipse,  size  - farthest-side</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h5>closest-corner</h5>
+            <p>Эффект виден при заданной позиции &mdash; градиент будет такого размера, что радиус окружности или эллипса будет касаться угла ближайшего к заданной позиции:</p>
+            <p data-height="186" data-theme-id="0" data-slug-hash="dpWXdJ" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/dpWXdJ/">Radial gradient - shape ellipse,  size  - closest-corner</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h5>farthest-corner</h5>
+            <p>Эффект виден при заданной позиции &mdash; градиент будет такого размера, что радиус окружности или эллипса будет касаться наиболее отдалённого от заданной позиции угла:</p>
+            <p data-height="235" data-theme-id="0" data-slug-hash="NRjbKg" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/NRjbKg/">Radial gradient - shape ellipse,  size  - farthest-corner</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>Повторяющиеся градиенты</h3>
+            <h4>repeating-linear-gradient()</h4>
+            <p>Это функция создающая изображение которое состоит из повторяющихся линейных градиентов.</p>
             
+
+
             <h2>
                 <a id="animation" class="anchor" href="#animation" aria-hidden="true"><span aria-hidden="true"
                                                                                             class="octicon octicon-link"></span>Простая анимация</a>
