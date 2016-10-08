@@ -101,12 +101,7 @@
                 Псевдоэлементы, которые используется для добавления контента до (<b>before</b>) и после (<b>after</b>) содержимого элемента, к которому он добавляется.
             </p>
             <p>Эти псевдоэлементы и их контент используются для декоративных целей, например можно выводить все ссылки в явном виде при печати страницы.</p>
-<<<<<<< HEAD
-            <p>Псевдоэлементы <b>before</b> и <b>after</b> это очень мощный инструмент для добавления декоративных CSS-свойств.</p>
 
-
-
-=======
             <p>Псевдоэлементы <b>before</b> и <b>after</b> это очень мощный инструмент для добавления декоративных CSS-свойств. Кроме того можно делать всплывающие подсказки, размещая текст для подсказок в атрибутах элемента.</p>
             <p>Псевдоэлементы <b>before</b> и <b>after</b> <b>испльзуются только вместе</b> со свйойством <b>content</b> в котором размещается дополнительный контент, выводимый из CSS в HTML либо использующий значения атрибутов элемента.</p>
             <h4>Значения свойства content</h4>
@@ -141,7 +136,6 @@
                 Можно использовать для декоративных целей:
             </p>
             <p data-height="480" data-theme-id="0" data-slug-hash="EgkXpQ" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/EgkXpQ/">Pseudo element before/after - decorative</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
->>>>>>> 230dc9d1752cf5b064955bdeaf0d5603dba9845e
             <h3>Псевдоэлемент ::selection</h3>
             <p>Псевдоэлемент <b>::selection</b> позволяет переопределить цвета по умолчанию области выделенного текста.</p>
             <p data-height="282" data-theme-id="0" data-slug-hash="QKdrjv" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/QKdrjv/">Pseudo element selection</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
@@ -184,7 +178,17 @@
             </p>
             <p data-height="290" data-theme-id="0" data-slug-hash="QKdqoX" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/QKdqoX/">Floating elements grids</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
-
+            <p>
+                Чтобы очистить поток флоатов &mdash; сделать так, чтобы флоатнутые блоки не "выпадали" из контейнеров наиболее часто используют CSS-класс <b>clearfix</b>, который добавляется к контенеру, содержащему флоатнутые элементы.
+            </p>
+            <p>
+                <a href="https://css-tricks.com/snippets/css/clear-fix/">Рассмотрение вариантов clearfix-а</a>.
+            </p>
+            <p data-height="397" data-theme-id="0" data-slug-hash="bwvEro" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/bwvEro/">Float with and without clearfix</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Так же можно добиться такого же эффекта добавив CSS-свойство для контейнера с флоатнутыми элементами <b>overflow: hidden</b> (обрезать содержимое по размерам блока). Однако не всегда возможно использовать это свойство, т.к. совместно с <b>position: relative;</b> блок начинает "обрезать" находящиеся внутри него элементы с <b>position: absolute;</b>.
+            </p>
+            <p data-height="395" data-theme-id="0" data-slug-hash="rrdxKq" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/rrdxKq/">Float with and without overflow: hidden</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h2>
                 <a id="position" class="anchor" href="#position" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Позиционирование</a>
