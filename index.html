@@ -69,8 +69,18 @@
                 <li><b>nth-child(even)</b> &mdash; выбирает чётный элемент</li>
                 <li><b>nth-child(odd)</b> &mdash; выбирает нечётный элемент</li>
             </ul>
-            <p data-height="410" data-theme-id="0" data-slug-hash="LRxkQB" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/LRxkQB/">Child pseudo classes</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
+            <p data-height="410" data-theme-id="0" data-slug-hash="LRxkQB" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/LRxkQB/">Child pseudo classes</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Существуют псевдоклассы для выбора первого и последнего элемента по типу <b>:first-of-type, :last-of-type</b>.
+            </p>
+            <p>
+                С помощью псевдокласса <b>:not()</b> можно выбирать все элементы которые НЕ того типа который указан в скобках.
+            </p>
+            <p data-height="257" data-theme-id="0" data-slug-hash="XMVWwL" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="Not las child" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/XMVWwL/">Not las child</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <blockquote>
+                Проверить поддержку и узнать о существовании других псевдоклассов и CSS3 селекторов можно здесь: <a href="http://caniuse.com/#feat=css-sel3">http://caniuse.com/#feat=css-sel3</a>.
+            </blockquote>
             <h2>
                 <a id="pseudoelements" class="anchor" href="#pseudoelements" aria-hidden="true"><span aria-hidden="true"
                                                                                   class="octicon octicon-link"></span>Псевдоэлементы</a>
@@ -98,7 +108,7 @@
             <h3>Псевдоэлементы before и after</h3>
 
             <p>
-                Псевдоэлементы, которые используется для добавления контента до (<b>before</b>) и после (<b>after</b>) содержимого элемента, к которому он добавляется.
+                Псевдоэлементы, которые используется для добавления контента до (<strong>before</strong>) и после (<strong>after</strong>) содержимого элемента, к которому он добавляется.
             </p>
             <p>Эти псевдоэлементы и их контент используются для декоративных целей, например можно выводить все ссылки в явном виде при печати страницы.</p>
 
@@ -139,7 +149,7 @@
             <h3>Псевдоэлемент ::selection</h3>
             <p>Псевдоэлемент <b>::selection</b> позволяет переопределить цвета по умолчанию области выделенного текста.</p>
             <p data-height="282" data-theme-id="0" data-slug-hash="QKdrjv" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/QKdrjv/">Pseudo element selection</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-            <h3>Псевдоэлемент ::placeholder</h3>
+            <h3>Псевдоэлемент ::user-select</h3>
             <p>Существуют другие псевдоэлементы которые используются с браузерными префиксами, и которые не входят в стандарты, но могут использоваться для задания специфичных для браузеров стилей, например <b>user-select</b> (запрещает выделять текст):</p>
             <p data-height="258" data-theme-id="0" data-slug-hash="ZpLJzA" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/ZpLJzA/">Pseudo element user select none</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h2>
@@ -150,9 +160,9 @@
                 Для того чтобы сделать блок "плавающим" (float - floating) для элемента необходимо применить свойство <b>float</b>, которое может принимать три значения:
             </p>
             <ul>
-                <li><b>left</b> &mdash; блок прибивается к <b>левому</b> краю доступной области и контент обтекает блок справа.</li>
-                <li><b>right</b> &mdash; блок прибивается к <b>правому</b> краю доступной области  и контент обтекает блок слева.</li>
-                <li><b>none</b> &mdash; отменяются свойства left/right.</li>
+                <li><strong>left</strong> &mdash; блок прибивается к <b>левому</b> краю доступной области и контент обтекает блок справа.</li>
+                <li><strong>right</strong> &mdash; блок прибивается к <b>правому</b> краю доступной области  и контент обтекает блок слева.</li>
+                <li><strong>none</strong> &mdash; отменяются свойства left/right.</li>
             </ul>
             <blockquote>
                 <strong>Особенность</strong>
@@ -196,7 +206,7 @@
             <p>Чтобы задать позиционирование элемента используется свойсво <b>position</b>. По умолчанию у элементов значение <b>position</b> это <b>static</b>.</p>
             <p>Все значения свойства <b>position</b>:</p>
             <ul>
-                <li><b>static</b> &mdash; нормальное позиционирование, элемент участвует в общем потоке элементов (элементы идут один под другим).</li>
+                <li><b>static</b> &mdash; нормальное позиционирование, элемент участвует в общем потоке элементов (элементы идут один под другим если это блочные элементы) или один справа от предыдущего (если это inline, inline-block) элементы.</li>
                 <li><b>relative</b> &mdash; позиционирование похожее на <b>static</b>, но при этом свойстве элемент может быть вынесен на более высокий или более низкий слой с помощью свойства <b>z-index</b>, а так же элемент может быть смещён относительно своего нормального положения с помощью свойств:
                     <ul>
                         <li><b>top</b> &mdash; отступ сверху.</li>
@@ -280,7 +290,7 @@
             <p>Элемент <b>article</b> может включать в себя собственный <b>header</b>, <b>footer</b>.</p>
             <blockquote>
                 <b>Особенность</b>
-                Даже если на странице уже есть <strong>h1</strong>, внутри элемента <stong>article</stong> мы можем задать собственный <strong>h1</strong>.
+                Даже если на странице уже есть <strong>h1</strong>, внутри элемента <strong>article</strong> мы можем задать собственный <strong>h1</strong>.
             </blockquote>
             <p data-height="448" data-theme-id="0" data-slug-hash="WGpZvz" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/WGpZvz/">Articles</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <h4>Элемент section</h4>
@@ -443,7 +453,7 @@
             </p>
             <blockquote>
                 <b>Синтаксис:</b>
-                background: <span class="func">linear-gradient</span>(цвет_1 <strong class="accent">расстояние_цвета_1</strong>, цвет_2 <strong class="accent">расстояние_цвета_2</strong>, цвет_3 <strong class="accent">расстояние_цвета_3</strong></strong>);
+                background: <span class="func">linear-gradient</span>(цвет_1 <strong class="accent">расстояние_цвета_1</strong>, цвет_2 <strong class="accent">расстояние_цвета_2</strong>, цвет_3 <strong class="accent">расстояние_цвета_3</strong>);
             </blockquote>
             <p data-height="166" data-theme-id="0" data-slug-hash="rrmxLy" data-default-tab="css,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/rrmxLy/">Gradient - cplor stops</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
             <hr/>
@@ -536,7 +546,7 @@
 </div>
 
 <script src="javascripts/highlight/highlight.pack.js"></script>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="javascripts/jquery.js"></script>
 <script src="javascripts/jquery.scrollNav.min.js"></script>
